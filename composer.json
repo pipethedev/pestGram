@@ -1,0 +1,7 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^5.3",
+        "facebook/graph-sdk": "^5.7",
+        "twig/twig": "^3.3"
+    }
+}
