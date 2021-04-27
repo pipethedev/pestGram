@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ .'./IRequest.php';
+namespace Main\Controls;
+
+use Main\Controls\IRequest;
 
 class Request implements IRequest
 {

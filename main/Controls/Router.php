@@ -1,5 +1,9 @@
 <?php
 
+namespace Main\Controls;
+
+use Main\Controls\IRequest as IRequest;
+
 class Router
 {
   private $request;
