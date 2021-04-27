@@ -14,7 +14,8 @@ $router = new Router(new Request);
 $router->get('/', function() {
     $loader = new FilesystemLoader('views');
     $twig = new Environment($loader);
-    return $twig->render('index.php');
+    $session = $_SESSION['user_session'];
+    return $twig->render('index.php', ['session' => $session]);
 
 });
 
@@ -63,4 +64,11 @@ $router->get('/home', function($request){
     $twig = new Environment($loader);
 
     return $twig->render('home.php', ['session' => $session]);
+});
+
+$router->post('/post', function($request){
+    //send post to DB
+    $post = new Post();
+
+    return $post->postData('test', 'test', 'test', 'test');
 });

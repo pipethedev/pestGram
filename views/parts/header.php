@@ -30,6 +30,9 @@
                             <li><a href="/" class="active border-b-2 border-orange-500 pb-2">Home</a></li>
                             <li><a href="/login" class="hover:text-orange-500">Login</a></li>
                             <li><a href="https://muritaladavid.herokuapp.com" class="hover:text-orange-500">Developer</a></li>
+                            {% if session %}
+                                <li><a href="/profile"><img src="https://www.flaticon.com/svg/vstatic/svg/149/149071.svg?token=exp=1619463595~hmac=e90d5f77105041dbc70f7f618ea2015c" height="30" width="30" style="cursor:pointer;"></a></li>
+                            {% endif %}
                         </ul>
                     </navbar>
 

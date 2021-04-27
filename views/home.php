@@ -11,7 +11,7 @@
         <div id="header">
           {% include "./parts/header.php" %}
         </div>
-        <div id="form" class="container">
+        <div id="form" class="">
         {% include "./parts/home.php" %}
         </div>
     </body>
